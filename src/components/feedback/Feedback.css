@@ -1,0 +1,20 @@
+section {
+  padding: 20px;
+}
+
+button {
+  padding: 5px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 250ms;
+  background-color: rgb(192, 232, 182);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button:hover {
+  background-color: rgb(156, 221, 138);
+  transform: scale(1.1);
+}
