@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import '../FeedbackOptions/FeedbackOptions.module.css';
 
-export const FeedbackOptions = ({ options, onFeedback }) => (
+export const FeedbackOptions = ({ options, onAddFeedback }) => (
   <div>
     {options.map(value => (
-      <button type="button" value={value} onClick={onFeedback}>
+      <button type="button" value={value} onClick={onAddFeedback}>
         {value[0].toUpperCase() + value.slice(1)}
       </button>
     ))}
@@ -13,5 +13,5 @@ export const FeedbackOptions = ({ options, onFeedback }) => (
 
 FeedbackOptions.propTypes = {
   options: PropTypes.array.isRequired,
-  onFeedback: PropTypes.func.isRequired,
+  onAddFeedback: PropTypes.func.isRequired,
 };

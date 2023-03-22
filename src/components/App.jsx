@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { Component } from 'react';
 import { Section } from './Section/Section';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
@@ -7,14 +6,6 @@ import { Notification } from './Notification/Notification';
 import css from '../components/App.module.css';
 
 export class App extends Component {
-  static propTypes = {
-    good: PropTypes.number.isRequired,
-    neutral: PropTypes.number.isRequired,
-    bad: PropTypes.number.isRequired,
-    total: PropTypes.number.isRequired,
-    positivePercentage: PropTypes.number.isRequired,
-  };
-
   state = {
     good: 0,
     neutral: 0,
@@ -53,7 +44,7 @@ export class App extends Component {
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={Object.keys({ good, neutral, bad })}
-            onFeedback={this.handleClickBtn}
+            onAddFeedback={this.handleClickBtn}
           ></FeedbackOptions>
         </Section>
 
