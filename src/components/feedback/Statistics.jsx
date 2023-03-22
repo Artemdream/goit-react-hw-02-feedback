@@ -9,7 +9,7 @@ export const Statistics = ({
   positivePercentage,
 }) => (
   <>
-    {total > 0 ? (
+    {total ? (
       <>
         <p>Good: {good}</p>
         <p>Neutral: {neutral}</p>
