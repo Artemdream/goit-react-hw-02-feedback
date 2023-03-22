@@ -3,14 +3,6 @@ import PropTypes from 'prop-types';
 import { Section } from './Section';
 
 export class App extends Component {
-  static defaultProps = {
-    initialGood: 0,
-    initialNeutral: 0,
-    initialBad: 0,
-    initialTotal: 0,
-    initialPositivePercentage: `${0}%`,
-  };
-
   static propTypes = {
     good: PropTypes.number.isRequired,
     neutral: PropTypes.number.isRequired,
@@ -20,11 +12,11 @@ export class App extends Component {
   };
 
   state = {
-    good: this.props.initialGood,
-    neutral: this.props.initialNeutral,
-    bad: this.props.initialBad,
-    total: this.props.initialTotal,
-    positivePercentage: this.props.initialPositivePercentage,
+    good: 0,
+    neutral: 0,
+    bad: 0,
+    total: 0,
+    positivePercentage: `${0}%`,
   };
 
   countGoodFeedback = () => {
