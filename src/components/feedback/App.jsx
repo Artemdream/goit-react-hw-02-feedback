@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Section } from './Section';
 
-export class Feedback extends Component {
+export class App extends Component {
   static defaultProps = {
     initialGood: 0,
     initialNeutral: 0,

@@ -13,7 +13,6 @@ export const Section = ({
   positivePercentage,
 }) => (
   <section>
-    <h1>Please leave feedback</h1>
     <FeedbackOptions
       onGoodFeedback={GoodFeedback}
       onBadFeedback={BadFeedback}

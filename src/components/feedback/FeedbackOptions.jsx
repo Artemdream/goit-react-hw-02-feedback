@@ -7,6 +7,7 @@ export const FeedbackOptions = ({
   onBadFeedback,
 }) => (
   <div>
+    <h1>Please leave feedback</h1>
     <button type="button" onClick={onGoodFeedback}>
       Good
     </button>
