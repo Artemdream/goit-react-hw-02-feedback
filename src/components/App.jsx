@@ -12,8 +12,8 @@ export class App extends Component {
     bad: 0,
   };
 
-  handleClickBtn = event => {
-    const value = event.target.value;
+  handleClickBtn = evt => {
+    const value = evt.target.value;
     this.setState(prevState => ({
       [value]: prevState[value] + 1,
     }));

@@ -5,7 +5,7 @@ export const FeedbackOptions = ({ options, onAddFeedback }) => (
   <div>
     {options.map(value => (
       <button type="button" value={value} onClick={onAddFeedback}>
-        {value[0].toUpperCase() + value.slice(1)}
+        {value.replace(value[0], value[0].toUpperCase())}
       </button>
     ))}
   </div>
