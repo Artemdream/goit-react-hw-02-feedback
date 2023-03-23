@@ -14,17 +14,13 @@ export class App extends Component {
 
   handleClickBtn = event => {
     const value = event.target.value;
-
     this.setState(prevState => ({
       [value]: prevState[value] + 1,
     }));
   };
 
   countTotalFeedback = () =>
-    Object.values(this.state).reduce(
-      (total, prevState) => total + prevState,
-      0
-    );
+    Object.values(this.state).reduce((total, feedback) => total + feedback, 0);
 
   countPositiveFeedbackPercentage = () =>
     Math.round(
