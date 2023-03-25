@@ -41,7 +41,7 @@ export class App extends Component {
           <FeedbackOptions
             options={Object.keys({ good, neutral, bad })}
             onAddFeedback={this.handleClickBtn}
-          ></FeedbackOptions>
+          />
         </Section>
 
         <Section title="Statistics">
@@ -50,7 +50,7 @@ export class App extends Component {
               good={good}
               neutral={neutral}
               bad={bad}
-              total={this.countTotalFeedback}
+              total={() => this.countTotalFeedback()}
               positivePercentage={this.countPositiveFeedbackPercentage}
             />
           ) : (
